@@ -1,4 +1,4 @@
-package com.chuistov.config;
+package com.chuistov.mvc.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -14,14 +14,14 @@ import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
 @Configuration
+@ComponentScan("com.chuistov.mvc")
 @EnableWebMvc
-@ComponentScan("com.chuistov")
-public class WebConfig implements WebMvcConfigurer {
+public class SpringConfig implements WebMvcConfigurer {
 
     private final ApplicationContext applicationContext;
 
     @Autowired
-    public WebConfig(ApplicationContext applicationContext) {
+    public SpringConfig(ApplicationContext applicationContext) {
         this.applicationContext = applicationContext;
     }
 
@@ -29,7 +29,7 @@ public class WebConfig implements WebMvcConfigurer {
     public SpringResourceTemplateResolver templateResolver() {
         SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
         templateResolver.setApplicationContext(applicationContext);
-        templateResolver.setPrefix("/WEB-INF/pages/");
+        templateResolver.setPrefix("/WEB-INF/views/");
         templateResolver.setSuffix(".html");
         return templateResolver;
     }
@@ -41,7 +41,6 @@ public class WebConfig implements WebMvcConfigurer {
         templateEngine.setEnableSpringELCompiler(true);
         return templateEngine;
     }
-
 
     @Override
     public void configureViewResolvers(ViewResolverRegistry registry) {

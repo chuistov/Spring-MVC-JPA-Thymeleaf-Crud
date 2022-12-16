@@ -10,28 +10,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca2a496d-e84b-4173-ab27-359a4f919b3a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chuistov/config/AppInit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chuistov/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chuistov/controller/CarController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chuistov/model/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chuistov/service/CarService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/cars.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/car_style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/entities/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/new.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/users.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chuistov/config/AppInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/config/DispatcherSerlvetIntitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chuistov/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/config/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chuistov/controller/CarController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chuistov/model/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chuistov/service/CarService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/cars.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/car_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/users_style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -49,18 +81,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Me/IdeaProjects/pp_2.3.1_mvc-jpa_crud/src/main/webapp"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Me/IdeaProjects/pp_2.3.1_mvc-jpa_crud/src/main/webapp&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;04712f645469a5eaf8868a4a6ad964db&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Me\IdeaProjects\pp_2.3.1_mvc-jpa_crud\src\main\webapp" />
+      <recent name="C:\Users\Me\IdeaProjects\pp_2.3.1_mvc-jpa_crud" />
       <recent name="C:\Users\Me\IdeaProjects\pp_2.3.1_mvc-jpa_crud\src\main\java\com\chuistov" />
       <recent name="C:\Users\Me\IdeaProjects\pp_2.3.1_mvc-jpa_crud\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\Me\IdeaProjects\pp_2.3.1_mvc-jpa_crud\src\main\java\com\chuistov\config" />
@@ -82,7 +122,7 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="a03134e9-cce9-4f65-ac99-eaa507e2a4e1" />
-        <option name="HTTP_PORT" value="8088" />
+        <option name="HTTP_PORT" value="8089" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -168,11 +208,29 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670864190830</updated>
-      <workItem from="1670864193736" duration="2474000" />
+      <workItem from="1670864193736" duration="3819000" />
+      <workItem from="1670868824593" duration="1854000" />
+      <workItem from="1670952419450" duration="350000" />
+      <workItem from="1670961912558" duration="73000" />
+      <workItem from="1670965651923" duration="1442000" />
+      <workItem from="1671186886537" duration="16672000" />
+      <workItem from="1671218539346" duration="1219000" />
     </task>
+    <task id="LOCAL-00001" summary="MVC part configured: controller processes GET request, mock service returns data, Thymeleaf view returns data as a table with CSS included.">
+      <created>1670867849726</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670867849726</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="MVC part configured: controller processes GET request, mock service returns data, Thymeleaf view returns data as a table with CSS included." />
+    <option name="LAST_COMMIT_MESSAGE" value="MVC part configured: controller processes GET request, mock service returns data, Thymeleaf view returns data as a table with CSS included." />
   </component>
 </project>

@@ -1,24 +1,18 @@
-package com.chuistov.config;
+package com.chuistov.mvc.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-public class AppInit extends AbstractAnnotationConfigDispatcherServletInitializer {
-
-    // Config class
+public class DispatcherSerlvetIntitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
     protected Class<?>[] getRootConfigClasses() {
         return null;
     }
 
-    // Adding configuration where ViewResolver is initialized to display JSPs correctly
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class<?>[]{
-                WebConfig.class
-        };
+        return new Class[]{SpringConfig.class};
     }
 
-    // Returning URL on which this app will be based
     @Override
     protected String[] getServletMappings() {
         return new String[]{"/"};

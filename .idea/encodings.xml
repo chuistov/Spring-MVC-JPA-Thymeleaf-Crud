@@ -6,7 +6,7 @@
     <file url="file://$PROJECT_DIR$/src/main/java/com/chuistov/config/WebConfig.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/chuistov/controller/CarController.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/chuistov/model/Car.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/com/chuistov/service/CarService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/chuistov/service/CarServiceImpl.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>
 </project>
