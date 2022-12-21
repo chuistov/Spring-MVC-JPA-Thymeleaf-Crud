@@ -21,13 +21,24 @@
                 <td th:text="${user.getLastName()}"></td>
                 <td th:text="${user.getAge()}"></td>
                 <td>
-                    <a th:href="@{/user/{id}(id=${user.getId()})}" text="User Details">User Details</a>
+                    <form th:method="GET" th:action="@{/user/{id}(id=${user.getId()})}">
+                        <input type="submit" value="User Details">
+                    </form>
                 </td>
                 <td>
-                    <a href="/user/new" text="Add User">Add User</a>
+                    <a th:href="@{/user/{id}/edit(id=${user.getId()})}" text="Update User">Update User</a>
+                </td>
+                <td>
+                    <form th:method="DELETE" th:action="@{/user/{id}(id=${user.getId()})}" th:object="${user}">
+                        <input type="submit" value="Delete User">
+                    </form>
                 </td>
             </tr>
         </th:block>
     </table>
+    <br/>
+    <hr/>
+    <a href="/user/new" text="Add User">Add User</a>
+
 </body>
 </html>
