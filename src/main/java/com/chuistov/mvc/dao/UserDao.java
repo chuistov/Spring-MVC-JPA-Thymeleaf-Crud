@@ -2,23 +2,28 @@ package com.chuistov.mvc.dao;
 
 import com.chuistov.mvc.entities.User;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
+import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 import java.util.List;
 
 @Repository
 public class UserDao {
 
-    private final EntityManager entityManager =
+
+    private EntityManager entityManager =
             Persistence.createEntityManagerFactory("COLIBRI").createEntityManager();
 
+//    @Transactional
     public User add(User user) {
         entityManager.getTransaction().begin();
         User userFromDb = entityManager.merge(user);
         entityManager.getTransaction().commit();
         return userFromDb;
+//        return entityManager.merge(user);
     }
 
     public void delete(long id) {
