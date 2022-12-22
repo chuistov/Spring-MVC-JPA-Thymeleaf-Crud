@@ -1,10 +1,23 @@
 package com.chuistov.mvc.entities;
 
+import javax.persistence.*;
+
+@Entity
+@Table(schema = "repository", name = "user")
+@NamedQuery(name = "User.getAll", query = "SELECT u from User u")
 public class User {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
+    @Column
     private String name;
+
+    @Column(name = "last_name")
     private String lastName;
+
+    @Column
     private int age;
 
     public User() {

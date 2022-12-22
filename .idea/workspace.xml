@@ -10,14 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca2a496d-e84b-4173-ab27-359a4f919b3a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/config/DispatcherSerlvetIntitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/config/DispatcherSerlvetIntitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/entities/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/new.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/users.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +204,7 @@
       <workItem from="1670961912558" duration="73000" />
       <workItem from="1670965651923" duration="1442000" />
       <workItem from="1671186886537" duration="16672000" />
-      <workItem from="1671218539346" duration="18656000" />
+      <workItem from="1671218539346" duration="22330000" />
     </task>
     <task id="LOCAL-00001" summary="MVC part configured: controller processes GET request, mock service returns data, Thymeleaf view returns data as a table with CSS included.">
       <created>1670867849726</created>
@@ -220,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671220111922</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="MVC realized and ready for JPA to be added">
+      <created>1671657778387</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671657778387</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +236,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="MVC part configured: controller processes GET request, mock service returns data, Thymeleaf view returns data as a table with CSS included." />
     <MESSAGE value="MVC partially realized: added functions which show users and add a new user. JPA is mocked with a list." />
-    <option name="LAST_COMMIT_MESSAGE" value="MVC partially realized: added functions which show users and add a new user. JPA is mocked with a list." />
+    <MESSAGE value="MVC realized and ready for JPA to be added" />
+    <option name="LAST_COMMIT_MESSAGE" value="MVC realized and ready for JPA to be added" />
   </component>
 </project>
