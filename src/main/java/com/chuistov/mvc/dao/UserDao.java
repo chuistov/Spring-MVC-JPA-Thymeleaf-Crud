@@ -1,6 +1,8 @@
 package com.chuistov.mvc.dao;
 
 import com.chuistov.mvc.entities.User;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -13,37 +15,28 @@ import java.util.List;
 @Repository
 public class UserDao {
 
+    @Autowired
+    private SessionFactory sessionFactory;
 
-    private EntityManager entityManager =
-            Persistence.createEntityManagerFactory("COLIBRI").createEntityManager();
-
-//    @Transactional
     public User add(User user) {
-        entityManager.getTransaction().begin();
-        User userFromDb = entityManager.merge(user);
-        entityManager.getTransaction().commit();
-        return userFromDb;
-//        return entityManager.merge(user);
+        return sessionFactory.getCurrentSession().merge(user);
     }
 
     public void delete(long id) {
-        entityManager.getTransaction().begin();
-        entityManager.remove(get(id));
-        entityManager.getTransaction().commit();
+        sessionFactory.getCurrentSession().remove(get(id));
     }
 
     public User get(long id) {
-        return entityManager.find(User.class, id);
+        return sessionFactory.getCurrentSession().find(User.class, id);
     }
 
     public void update(User user) {
-        entityManager.getTransaction().begin();
-        entityManager.merge(user);
-        entityManager.getTransaction().commit();
+        sessionFactory.getCurrentSession().merge(user);
     }
 
     public List<User> getAll() {
-        TypedQuery<User> namedQuery = entityManager.createNamedQuery("User.getAll", User.class);
-        return namedQuery.getResultList();
+        return sessionFactory.getCurrentSession()
+                .createQuery("from User")
+                .getResultList();
     }
 }
