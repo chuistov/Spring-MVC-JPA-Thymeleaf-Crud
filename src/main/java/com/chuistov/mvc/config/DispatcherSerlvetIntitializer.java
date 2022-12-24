@@ -14,8 +14,8 @@ public class DispatcherSerlvetIntitializer extends AbstractAnnotationConfigDispa
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        // TODO <?> added - delete it?
-        return new Class<?>[] {SpringConfig.class};
+        // TODO <?> added - delete it? HibernateConfig.class added - delete it?
+        return new Class<?>[] {SpringConfig.class, HibernateConfig.class};
     }
 
     @Override
