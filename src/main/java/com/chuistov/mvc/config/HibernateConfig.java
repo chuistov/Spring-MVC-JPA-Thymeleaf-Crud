@@ -1,7 +1,5 @@
 package com.chuistov.mvc.config;
 
-import com.chuistov.mvc.entities.User;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -9,8 +7,6 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
-import org.springframework.orm.hibernate5.HibernateTransactionManager;
-import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
@@ -23,14 +19,17 @@ import java.util.Properties;
 @Configuration
 @PropertySource("classpath:db.properties")
 @EnableTransactionManagement
-@ComponentScan(value = "com.chuistov.mvc")
-public class AppConfig {
+@ComponentScan("com.chuistov.mvc")
+public class HibernateConfig {
 
-   @Autowired
-   private Environment env;
+   private final Environment env;
+
+   public HibernateConfig(Environment env) {
+      this.env = env;
+   }
 
    @Bean
-   public DataSource getDataSource() {
+   public DataSource dataSource() {
       DriverManagerDataSource dataSource = new DriverManagerDataSource();
       dataSource.setDriverClassName(Objects.requireNonNull(env.getProperty("db.driver")));
       dataSource.setUrl(env.getProperty("db.url"));
@@ -40,10 +39,10 @@ public class AppConfig {
    }
 
    @Bean
-   public LocalContainerEntityManagerFactoryBean getEntityManagerFactory() {
+   public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
       LocalContainerEntityManagerFactoryBean entityManagerFactory =
               new LocalContainerEntityManagerFactoryBean();
-      entityManagerFactory.setDataSource(getDataSource());
+      entityManagerFactory.setDataSource(dataSource());
       entityManagerFactory.setPackagesToScan("com.chuistov.mvc.entities");
 
       Properties props = new Properties();
@@ -59,10 +58,10 @@ public class AppConfig {
    }
 
    @Bean
-   public JpaTransactionManager getJpaTransactionManager() {
+   public JpaTransactionManager jpaTransactionManager() {
       JpaTransactionManager transactionManager = new JpaTransactionManager();
       transactionManager.setEntityManagerFactory(
-              getEntityManagerFactory().getObject());
+              entityManagerFactory().getObject());
       return transactionManager;
    }
 

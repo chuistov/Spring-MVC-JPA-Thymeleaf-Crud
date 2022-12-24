@@ -14,12 +14,13 @@ public class DispatcherSerlvetIntitializer extends AbstractAnnotationConfigDispa
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[]{SpringConfig.class};
+        // TODO <?> added - delete it?
+        return new Class<?>[] {SpringConfig.class};
     }
 
     @Override
     protected String[] getServletMappings() {
-        return new String[]{"/"};
+        return new String[] {"/"};
     }
 
     @Override
@@ -29,7 +30,7 @@ public class DispatcherSerlvetIntitializer extends AbstractAnnotationConfigDispa
     }
 
     private void registerHiddenFieldFilter(ServletContext context) {
-        context.addFilter("hiddenHttpMethodFilter",
-                new HiddenHttpMethodFilter()).addMappingForUrlPatterns(null ,true, "/*");
+        context.addFilter("hiddenHttpMethodFilter", new HiddenHttpMethodFilter())
+                .addMappingForUrlPatterns(null ,true, "/*");
     }
 }

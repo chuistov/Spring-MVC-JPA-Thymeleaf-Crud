@@ -11,10 +11,13 @@
   <component name="ChangeListManager">
     <list default="true" id="ca2a496d-e84b-4173-ab27-359a4f919b3a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/config/HibernateConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/config/DispatcherSerlvetIntitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/config/DispatcherSerlvetIntitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/config/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/controllers/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/services/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,25 +68,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Me/IdeaProjects/pp_2.3.1_mvc-jpa_crud/src/main/resources&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;04712f645469a5eaf8868a4a6ad964db&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Me/IdeaProjects/pp_2.3.1_mvc-jpa_crud/src/main/resources",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "04712f645469a5eaf8868a4a6ad964db"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Me\IdeaProjects\pp_2.3.1_mvc-jpa_crud\src\main\resources" />
@@ -204,7 +208,7 @@
       <workItem from="1671186886537" duration="16672000" />
       <workItem from="1671218539346" duration="22765000" />
       <workItem from="1671719843347" duration="10097000" />
-      <workItem from="1671807221155" duration="2873000" />
+      <workItem from="1671807221155" duration="12761000" />
     </task>
     <task id="LOCAL-00001" summary="MVC part configured: controller processes GET request, mock service returns data, Thymeleaf view returns data as a table with CSS included.">
       <created>1670867849726</created>
@@ -241,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671745476799</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Java config implemented. HTTP Status 500 - ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet">
+      <created>1671813663858</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671813663858</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,6 +264,7 @@
     <MESSAGE value="MVC realized and ready for JPA to be added" />
     <MESSAGE value="MVC and JPA realized. Deployment failure." />
     <MESSAGE value="Getting rid of old-fashioned XML. Implementing Java config." />
-    <option name="LAST_COMMIT_MESSAGE" value="Getting rid of old-fashioned XML. Implementing Java config." />
+    <MESSAGE value="Java config implemented. HTTP Status 500 - ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Java config implemented. HTTP Status 500 - ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet" />
   </component>
 </project>
