@@ -11,8 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ca2a496d-e84b-4173-ab27-359a4f919b3a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/config/DispatcherSerlvetIntitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/config/DispatcherSerlvetIntitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chuistov/mvc/config/SpringConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +203,7 @@
       <workItem from="1671186886537" duration="16672000" />
       <workItem from="1671218539346" duration="22765000" />
       <workItem from="1671719843347" duration="10097000" />
-      <workItem from="1671807221155" duration="22176000" />
+      <workItem from="1671807221155" duration="24181000" />
     </task>
     <task id="LOCAL-00001" summary="MVC part configured: controller processes GET request, mock service returns data, Thymeleaf view returns data as a table with CSS included.">
       <created>1670867849726</created>
@@ -261,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671909039091</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Done.">
+      <created>1671998014851</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1671998014851</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,6 +293,7 @@
     <MESSAGE value="Getting rid of old-fashioned XML. Implementing Java config." />
     <MESSAGE value="Java config implemented. HTTP Status 500 - ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet" />
     <MESSAGE value="All GET methods work well. But either POST, UPDATE and DELETE methods don't work or respective DAO methods (add(), update(), delete()) fail to work properly." />
-    <option name="LAST_COMMIT_MESSAGE" value="All GET methods work well. But either POST, UPDATE and DELETE methods don't work or respective DAO methods (add(), update(), delete()) fail to work properly." />
+    <MESSAGE value="Done." />
+    <option name="LAST_COMMIT_MESSAGE" value="Done." />
   </component>
 </project>
